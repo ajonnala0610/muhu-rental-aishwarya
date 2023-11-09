@@ -1,0 +1,90 @@
+[{
+      "price": "135,000",
+      "primaryURL":"../img/p1.jpg",
+      "Address":"1046 S Maguire Teerace, Warrensburg, MO 64093",
+      "id": "7001001",
+      "bds":"3",
+      "ba":"3",
+      "sqft":"1,820",
+      "agent":"Williams Keller LLC",
+      "type":"House"
+    },
+    {
+      "primaryURL": "../img/p2.jpg",
+      "id": "7001002",
+      "price": "215,000",
+      "Address": "505 E Young st. Warrensburg, MO 64093",
+      "bds":"3",
+      "ba":"2",
+      "sqft":"2,130",
+      "agent":"Williams Keller LLC",
+      "type":"House"
+    },
+    {
+      "primaryURL": "../img/p3.jpg",
+      "id": "7001003",
+      "price": "145,000",
+      "Address": "400 Franklin Ave. Warrensburg, MO 64093",
+      "bds":"3",
+      "ba":"2",
+      "sqft":"2,130",
+      "agent":"Williams Keller LLC",
+      "type":"House"
+    },
+    {
+      "primaryURL": "../img/p4.jpg",
+      "id": "7001004",
+      "price": "69,000",
+      "Address": "505 E Young st. Warrensburg, MO 64093",
+      "bds":"3",
+      "ba":"2",
+      "sqft":"2,130",
+      "agent":"Williams Keller LLC",
+      "type":"House"
+    },
+    {
+      "primaryURL": "../img/p5.jpg",
+      "id": "7001005",
+      "price": "165,000",
+      "Address": "505 E Young st. Warrensburg, MO 64093",
+      "bds":"3",
+      "ba":"2",
+      "sqft":"2,130",
+      "agent":"Williams Keller LLC",
+      "type":"House"
+    },
+    {
+      "primaryURL": "../img/p6.jpg",
+      "id": "7001006",
+      "price": "155,000",
+      "Address": "420 Frnklin Ave. Warrensburg, MO 64093",
+      "bds":"3",
+      "ba":"2",
+      "sqft":"2,130",
+      "agent":"Williams Keller LLC",
+      "type":"House"
+    },
+    {
+      "primaryURL": "../img/p7.jpg",
+      "id": "7001007",
+      "price": "215000",
+      "Address": "505 E Young st. Warrensburg, MO 64093",
+      "bds":"3",
+      "ba":"2",
+      "sqft":"2,130",
+      "agent":"Williams Keller LLC",
+      "type":"House"
+    },
+    {
+      "primaryURL": "../img/p8.jpg",
+      "id": "7001008",
+      "price": "215000",
+      "Address": "505 E Young st. Warrensburg, MO 64093",
+      "bds":"3",
+      "ba":"2",
+      "sqft":"2,130",
+      "agent":"Williams Keller LLC",
+      "type":"House"
+    }
+  ]
+

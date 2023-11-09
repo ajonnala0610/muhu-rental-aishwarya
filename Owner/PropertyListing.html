@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="./css/styles.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" href="#">
+    <title>MUHU Rental</title>
+  </head>
+  <body>
+     <div id="mainContent" class="container">
+        <div class="col-md-6">
+          <h2>Lease Information</h2>
+          <br />
+
+          <form id="create-property-form">
+            <div class="form-group">
+              <label for="str_address">Monthly rent: </label>
+              <input type="text" name="rents" id="rent" value="$850"/><br />
+            </div>
+            <div class="form-group">
+              <label for="deposit">Security Deposit: </label>
+              <input type="text" name="deposit" id="deposit" value="$850"/><br />
+            </div>
+            <div class="form-group">
+                <label for="birthday">Available Date:</label>
+                <input type="date" id="availableday" name="availableday">
+            </div>
+            <div class="form-group">
+              <label for="lease_term">Lease Terms:</label><br />
+              <textarea id="lease_term" name="lease_term" rows="5" cols="50" placeholder="Example: Owner pays for lawn care and water. Tenant is responsible for gas and electric."></textarea>
+             </div>
+            <div class="form-group">
+             <fieldset>
+               <legend>Pet Policy</legend>
+                <div>
+                   <input type="checkbox" id="nopets" name="pet" value="nopets" checked />
+                   <label for="nopets">No pets allowed</label>
+               </div>
+               <div>
+                   <input type="checkbox" id="cats" name="pet" value="cats" />
+                  <label for="cats">cats allowed</label>
+               </div>
+               <div>
+                   <input type="checkbox" id="smldogs" name="pet" value="smldogs"/>
+                   <label for="smldog">Small dogs allowed</label>
+               </div>
+               <div>
+                   <input type="checkbox" id="lgdogs" name="pet" value="lgdogs" />
+                  <label for="lgdogs">Large dogs allowed</label>
+               </div>
+            </fieldset><br />
+
+            <div class="form-group">
+              
+            <fieldset>
+              <legend>for rent by (your role of listing this property for rent):</legend>
+               <div>
+                <input type="radio" id="owner" name="listingPerson" value="owner">
+                <label for="owner">Property Owner</label>
+               </div>
+              <div>
+              <input type="radio" id="manager" name="listingPerson" value="manager">
+               <label for="manager">Property Manager</label>
+              </div>
+              <div>
+                <input type="radio" id="agent" name="listingPerson" value="agent">
+                <label for="agent">Agent or Broker</label>
+              </div>
+              <div>
+                 <input type="radio" id="tenant" name="listingPerson" value="tenant">
+                 <label for="tenant">Tenant</label><br />
+              </div>
+          </fieldset>
+          <div>
+           <button type="submit" class="btn btn-primary" id="submit">
+              Submit
+            </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+	<div id="ContactUs" align="center">
+		<hr>
+		<div>
+			<h2>Contact Us</h2>
+		</div>
+		<table>
+			<tr>
+				<td><img src="img/muhu_logo.png" height=auto width="120" alt="MuHu Rental"></td>
+			</tr>
+		</table>
+		<div><p>1046 S Maguire Terrace<br>Warrensburg, MO 64093<br>Tel: +660-747-9189</p></div>
+		<div>
+			<h3>Hours</h3>
+		</div>
+		<div>Weekdays: 6:00am - 6:00pm<br>Saturday: 7:00am - 7:00pm<br>Closed on Sundays</div>
+	</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+<script src="./js/listProperties.js"></script> 
+  </body>
+</html>
