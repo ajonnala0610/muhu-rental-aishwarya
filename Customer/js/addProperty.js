@@ -29,11 +29,6 @@ form.addEventListener("submit", (e) => {
     },
     body: JSON.stringify(plainFormData),
   };
-  const response = await fetch(resource_url, fetchOptions);
-  if (response.ok) {
-                    console.log("Upload successful!");
-                } else {
-                    console.error("Failed to upload");
-                }
+  fetch(resource_url, fetchOptions);
   form.reset();
 });
