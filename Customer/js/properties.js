@@ -7,7 +7,9 @@ async function getListings() {
 
     try {
         let res = await fetch(url);
-        return await res.json();  
+        let resJson = await res.json();
+l		let listings = await resJson.body.json();		
+		return listings.properties;
     } catch (error) {
         console.log(error);
     }
