@@ -15,6 +15,7 @@ async function getListings() {
 
 async function renderListings() {
     let listings = await getListings();
+	console.log(listings);
     let html = '';
     listings.forEach(p => {
         let htmlSegment = `
