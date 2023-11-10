@@ -1,7 +1,7 @@
 //const api_url = 'https://ys8gxfz792.execute-api.us-east-1.amazonaws.com/prod';
 
 //const resource = '/properties';
-const url = '../data/properties.json';
+const url = "https://c7nq12veuh.execute-api.us-east-1.amazonaws.com/dev/listproperties";
 
 async function getListings() {
 
@@ -20,18 +20,17 @@ async function renderListings() {
         let htmlSegment = `
         <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="${p.primaryURL}" alt="Thumbnail [100%x225]" >
               <div class="list-card-info">  
-                    <a href="propertydetail.html?${p.id}" class="list-card-link list-card-link-top-margin" tabindex="0" id="">
-                   <address class="list-card-addr">${p.Address}</address></a> 
+                   <address class="list-card-addr">${p.str_address} ${p.city} ${p.state} ${p.zip}</address>
                   <div class="list-card-footer">
-                   <p class="list-card-extra-info">${p.agent}</p>
+				   <p class="list-card-extra-info">${p.year}</p>
+                   <p class="list-card-extra-info">Willams Keller LLC</p>
                   </div>
                   <div class="list-card-heading">
                       <div class="list-card-price">$${p.price}</div>
                       <ul class="list-card-details">
-                        <li class="">${p.bds}<abbr class="list-card-label"> bds</abbr></li>
-                        <li class="">${p.ba}<abbr class="list-card-label"> ba</abbr></li>
+                        <li class="">${p.beds}<abbr class="list-card-label"> bds</abbr></li>
+                        <li class="">${p.baths}<abbr class="list-card-label"> ba</abbr></li>
                         <li class="">${p.sqft}<abbr class="list-card-label"> sqft</abbr></li>
                         <li class="list-card-statusText">- ${p.type} for rent</li>
                    </ul>
