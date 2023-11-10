@@ -1,5 +1,4 @@
-{
-	"images": [
+[
 	"../img/p1.jpg",
 	"../img/p2.jpg",
 	"../img/p3.jpg",
@@ -8,4 +7,4 @@
 	"../img/p6.jpg",
 	"../img/p7.jpg",
 	"../img/p8.jpg"
-]}
+]
