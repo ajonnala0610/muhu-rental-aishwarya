@@ -7,9 +7,12 @@ async function getListings() {
 
     try {
         let res = await fetch(url);
-        let resJson = await res.json();
-		let listings = await resJson.body.json();		
-		return listings.properties;
+		let response = await res.json();
+		console.log(response.body);
+        let resJson = JSON.parse(response.body);
+		console.log(resJson);
+		let properties = resJson.properties;
+		return properties;
     } catch (error) {
         console.log(error);
     }
