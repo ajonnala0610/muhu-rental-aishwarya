@@ -2,6 +2,7 @@
 
 //const resource = '/properties';
 const url = "https://c7nq12veuh.execute-api.us-east-1.amazonaws.com/dev/listproperties";
+const imageUrl = '../data/properties.json';
 
 async function getListings() {
 
@@ -18,15 +19,27 @@ async function getListings() {
     }
 }
 
+async function getImages() {
+
+    try {
+        let res = await fetch(imageUrl);
+        return await res.json();  
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 async function renderListings() {
     let listings = await getListings();
+	let images = await getImages();
 	console.log(listings);
     let html = '';
     listings.forEach(p => {
         let htmlSegment = `
         <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <div class="list-card-info">  
+              <div class="list-card-info">
+					<img class="card-img-top" src="${images[Math.floor(Math.random() * images.length)]}" alt="Thumbnail [100%x225]" >			  
                    <address class="list-card-addr">${p.str_address} ${p.city} ${p.state} ${p.zip}</address>
                   <div class="list-card-footer">
 				   <p class="list-card-extra-info">${p.year}</p>
