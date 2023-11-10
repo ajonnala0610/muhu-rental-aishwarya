@@ -42,7 +42,8 @@ async function renderListings() {
 					<img class="card-img-top" src="${images[Math.floor(Math.random() * images.length)]}" alt="Thumbnail [100%x225]" >			  
                    <address class="list-card-addr">${p.str_address} ${p.city} ${p.state} ${p.zip}</address>
                   <div class="list-card-footer">
-				   <p class="list-card-extra-info">${p.year}</p>
+				   <p class="list-card-extra-info">Year Built: ${p.year}</p>
+				   <br/>
                    <p class="list-card-extra-info">Willams Keller LLC</p>
                   </div>
                   <div class="list-card-heading">
@@ -51,6 +52,7 @@ async function renderListings() {
                         <li class="">${p.beds}<abbr class="list-card-label"> bds</abbr></li>
                         <li class="">${p.baths}<abbr class="list-card-label"> ba</abbr></li>
                         <li class="">${p.sqft}<abbr class="list-card-label"> sqft</abbr></li>
+						<br/>
                         <li class="list-card-statusText">- ${p.type} for rent</li>
                    </ul>
                 </div>
